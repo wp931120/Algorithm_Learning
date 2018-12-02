@@ -1,5 +1,5 @@
 ## Result of experiment about bn layer 
-### the img data 
+### the detail of img data 
 ![Alt text](/deep_learing/Img/bn_1.png)
 ### the network architectures of cnn with bn layer
 ![Alt text](/deep_learing/Img/bn_2.png)
