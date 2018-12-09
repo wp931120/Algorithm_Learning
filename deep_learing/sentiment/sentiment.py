@@ -79,8 +79,10 @@ if __name__ =="__main__":
     # without attention layer
     model = model(max_features=max_features, maxlen=Maxlen, attention=False)
     train(model, train_data, train_labels, test_data, test_labels)
+    # the best result for test data: loss: loss: 0.2196 - acc: 0.9123 - val_loss: 0.3242 - val_acc: 0.860
 
     K.clear_session()
     # with attention layer
     model = model(max_features=max_features, maxlen=Maxlen, attention=True)
     train(model, train_data, train_labels, test_data, test_labels)
+    # the best result for test data : loss: 0.2277 - acc: 0.9084 - val_loss: 0.3188 - val_acc: 0.8607
