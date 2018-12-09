@@ -1,5 +1,5 @@
 from keras.layers import Dense, Flatten
-from keras.layers import  Embedding, Dropout, LSTM, GRU, Bidirectional
+from keras.layers import Embedding, Dropout, LSTM, GRU, Bidirectional
 from keras.models import Model
 from attention import AttentionLayer
 from keras.layers import Input,GlobalAvgPool1D
