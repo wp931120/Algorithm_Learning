@@ -4,16 +4,16 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier, ExtraTreesClassifier
 from sklearn.metrics import accuracy_score,f1_score
 
+
 class Trees:
 
     def __init__(self, model_type="decisiontree"):
         self.train_data, self.test_data, self.train_label, self.test_label = train_test_split(load_iris().data,
                                                                                               load_iris().target,
                                                                                               test_size=0.3,
-                                                                                               random_state=11)
+                                                                                              random_state=11)
         self.tree = self.choose_tree(model_type)
         # self.score = self.score()
-
 
     def choose_tree(self, model_type):
         if model_type == "decisiontree":
